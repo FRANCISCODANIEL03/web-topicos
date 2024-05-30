@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     const tabla = document.getElementById("div_tbl");
     const btn_ocult = document.getElementById("ocult");
     const alert = document.getElementById("aviso");
-    const URL = "http://localhost:3000/";
+    const URL = "https://api-topicos-1.onrender.com/";
     const limpiarTabla = () => {
         while (tbl.firstChild) {
             tbl.removeChild(tbl.firstChild);
