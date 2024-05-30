@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de datos</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <form>
         <h1>Base de datos</h1>
@@ -14,20 +17,19 @@
         <h3>Nombre</h3>
         <input type="text" id="input_nom">
         <div>
-            <button id="btn_ins">Insertar datos </button>
-            <button id="btn_cons">Consultar datos</button>
+            <button id="btn_ins">Insertar</button>
+            <button id="btn_cons">Consultar</button>
         </div>
         <div>
-            <button id="btn_act">Actualizar datos</button>
-            <button id="btn_elim">Eliminar datos</button>
+            <button id="btn_act">Actualizar</button>
+            <button id="btn_elim">Eliminar</button>
         </div>
-        <h3 id="aviso"></h3>
     </form>
     <div id="div_tbl" style="display: none;">
-        <table >
+        <table>
             <thead>
                 <tr>
-                    <td>Id</td>
+                    <td class="td-custom">Id</td>
                     <td>Nombre</td>
                 </tr>
             </thead>
@@ -39,4 +41,5 @@
     </div>
 </body>
 <script src="consulta.js"></script>
+
 </html>
